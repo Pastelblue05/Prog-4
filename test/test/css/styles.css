@@ -38,6 +38,31 @@ nav a:hover {
     color: var(--yellow-primary);
 }
 
+section {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 430px;
+    overflow: hidden;
+}
+
+section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    object-position: center;
+    opacity: .8;
+    transition: all .5s ease;
+}
+
+section img:hover {
+    cursor: crosshair;
+    flex-grow: 10;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
 footer {
     background-color: var(--black);
     padding: 3rem 1rem;
