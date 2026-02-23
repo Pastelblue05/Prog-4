@@ -1,7 +1,7 @@
 :root {
     --yellow-primary: #ffee8c;
     --black: #111;
-    --white: #fefefe;
+    --white: #ffffff;
 }
 
 body {
@@ -15,7 +15,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.5rem;
-    background-color: white;
+    background-color: var(--white);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -38,7 +38,23 @@ nav a:hover {
     color: var(--yellow-primary);
 }
 
-section {
+.inicio {
+    background: linear-gradient(90deg, white, var(--blue-primary));
+    padding: 5rem 1rem;
+    text-align: center;
+}
+
+.inicio h1{
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.inicio p{
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.aventuras {
     display: flex;
     width: 100%;
     max-width: 1000px;
@@ -47,7 +63,7 @@ section {
     overflow: hidden;
 }
 
-section img {
+.aventuras img {
     width: 0px;
     flex-grow: 1;
     object-fit: cover;
@@ -56,11 +72,40 @@ section img {
     transition: all .5s ease;
 }
 
-section img:hover {
+.aventuras img:hover {
     cursor: crosshair;
     flex-grow: 10;
     opacity: 1;
     filter: contrast(120%);
+}
+
+.mood {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px 20px;
+    background: var(--white);
+    flex-wrap: wrap;
+    width: 100%; 
+}
+
+.card {
+    text-align: center;
+    flex: 1 1 200px;
+    max-width: 250px;
+}
+
+.card img {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover;
+    border-radius: 15px;
+
+}
+
+.card h3 {
+    margin: 15px 0 10px;
+    font-weight: 800;
 }
 
 footer {
@@ -71,6 +116,6 @@ footer {
 }
 
 footer a {
-    color: var(--yellow-woodstock);
+    color: var(--yellow-primary);
     text-decoration: none;
 }
