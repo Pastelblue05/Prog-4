@@ -180,6 +180,21 @@ nav a:hover {
     font-weight: 600;
 }
 
+.btn-eliminar{
+    display:inline-block;
+    margin-top:10px;
+    padding:6px 10px;
+    background:#ff6b6b;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:6px;
+}
+
+.btn-eliminar:hover{
+    background:#e63946;
+}
+
 footer {
     background-color: var(--black);
     padding: 3rem 1rem;
