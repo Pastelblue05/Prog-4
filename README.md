@@ -11,6 +11,8 @@ El sitio incluye:
 
 • Sección de “Mood” con tarjetas
 
+• Seccion de comentarios editables
+
 • Footer informativo
 
 ☆ Autor:
