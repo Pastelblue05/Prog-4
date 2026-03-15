@@ -27,10 +27,6 @@
         <p>Espero que disfrutes de este portafolio</p>
     </section>
 
-
-
-
-
 <section class="aventuras">
     <img src="assets/descargar (1).jpg" alt="Snoopy" class="snoopy-image">
     <img src="assets/descargar (2).jpg" alt="Snoopy" class="snoopy-image">
@@ -60,6 +56,50 @@
         <h3>Paz</h3>
     </div>
 </section>
+
+<section id="Comentarios" class="bg-dark mt-3 p-3"> 
+    <div class="container-fluid row text-light">
+        <form action="conn.php" method="POST" class="formulario-snoopy">
+            <h2>Deja tu opinion de Snoopy</h2>        
+            <?php 
+            include "conn.php"; 
+            ?>
+            <input type="text" name="nombre_apellido" placeholder="Nombre Apellido" required>
+            <input type="text" name="usuario" placeholder="Nombre de Usuario (Opcional)">
+            <input type="email" name="email" placeholder="Correo electrónico" required>
+            <textarea name="nota" placeholder="Escribe tu nota aquí..." maxlength="1000" required></textarea>
+              
+                <button type="submit" name="enviar">Enviar</button>
+            </form>
+        <div class="lista-notas">
+            <h3>Notas Recientes:</h3>
+        </div>
+    <?php
+        $query = $conn->query("SELECT * FROM Comentarios ORDER BY id DESC");
+
+        while($row = $query->fetch_assoc()){
+        ?>
+            <div class="comentario-card">
+
+                <div class="comentario-header">
+                    <h3><?php echo $row['nombre_apellido']; ?></h3>
+                    <span class="fecha"><?php echo $row['fecha_nota']; ?></span>
+                </div>
+
+                <span class="usuario">@<?php echo $row['usuario']; ?></span>
+
+                <p class="comentario-texto">
+                    <?php echo $row['nota']; ?>
+                </p>
+
+            </div>
+<?php
+}
+?>
+    
+    </div>   
+</section>
+
 
 <footer>
     <p>2026 Portafolio Pastelblue05 - Todos los derechos reservados.</p>

@@ -108,6 +108,78 @@ nav a:hover {
     font-weight: 800;
 }
 
+.seccion-comentarios {
+    background: white;
+    padding: 3rem 1rem;
+    text-align: center;
+    border-top: 5px solid var(--black);
+}
+
+.formulario-snoopy {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.formulario-snoopy input, .formulario-snoopy textarea {
+    padding: 12px;
+    border: 3px solid var(--black);
+    border-radius: 8px;
+    font-family: "Nunito", sans-serif;
+}
+
+.formulario-snoopy button {
+    background-color: var(--yellow-primary);
+    border: 3px solid var(--black);
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 4px 4px 0px var(--black);
+}
+
+.lista-notas{
+    max-width: 700px;
+    margin: 40px auto;
+}
+
+.comentario-card{
+    background: var(--white);
+    border: 3px solid var(--black);
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 20px;
+    box-shadow: 6px 6px 0px var(--black);
+}
+
+.comentario-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comentario-header h3{
+    margin: 0;
+    font-weight: 800;
+}
+
+.usuario{
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+}
+
+.comentario-texto{
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.fecha{
+    font-size: 13px;
+    font-weight: 600;
+}
+
 footer {
     background-color: var(--black);
     padding: 3rem 1rem;
