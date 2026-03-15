@@ -195,6 +195,77 @@ nav a:hover {
     background:#e63946;
 }
 
+.btn-editar{
+display:inline-block;
+margin-top:10px;
+margin-right:10px;
+padding:6px 10px;
+background:#4dabf7;
+color:white;
+text-decoration:none;
+font-weight:bold;
+border-radius:6px;
+}
+
+.btn-editar:hover{
+background:#1c7ed6;
+}
+
+.editar-container{
+    max-width:500px;
+    margin:80px auto;
+    background:white;
+    padding:25px;
+    border:3px solid var(--black);
+    border-radius:12px;
+    box-shadow:6px 6px 0px var(--black);
+}
+
+.editar-container h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.form-editar{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.form-editar input,
+.form-editar textarea{
+    padding:12px;
+    border:3px solid var(--black);
+    border-radius:8px;
+    font-family:"Nunito", sans-serif;
+}
+
+.form-editar textarea{
+    height:120px;
+    resize:none;
+}
+
+.btn-actualizar{
+    background:#4dabf7;
+    border:3px solid var(--black);
+    padding:10px;
+    font-weight:bold;
+    cursor:pointer;
+    box-shadow:4px 4px 0px var(--black);
+}
+
+.btn-actualizar:hover{
+    background:#1c7ed6;
+}
+
+.volver{
+    display:block;
+    margin-top:15px;
+    text-align:center;
+    text-decoration:none;
+    font-weight:600;
+}
+
 footer {
     background-color: var(--black);
     padding: 3rem 1rem;

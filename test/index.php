@@ -92,6 +92,8 @@
                     <?php echo $row['nota']; ?>
                 </p>
 
+                <a href="editar.php?id=<?php echo $row['id']; ?>" class="btn-editar">Editar</a>
+
                 <a href="eliminar.php?id=<?php echo $row['id']; ?>" 
                 class="btn-eliminar"
                 onclick="return confirm('¿Seguro que deseas eliminar este comentario?')">Eliminar
